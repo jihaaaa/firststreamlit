@@ -16,7 +16,7 @@ if press=='Page 1':
     st.info("I utilized this dataset for my assignment to analyze whether or not a patient is going to attended for the medical appointment.")
 
 elif press=='Page 2':
-    image = Image.open('C:/Users/user10/Desktop/appointment.png')
+    image = Image.open('appointment.png')
     st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     st.title("PATIENTS' RECORD")
     
@@ -54,7 +54,7 @@ elif press=='Page 3':
     col5.metric("Unattended","20416")
     col6.metric("Unattended","46409")
     
-    image = Image.open('C:/Users/user10/Desktop/graph1.png')
+    image = Image.open('graph1.png')
     st.image(image, caption=None, width=700, use_column_width=None, clamp=False, channels="white", output_format="auto")
     
 elif press=='Page 4':
@@ -87,7 +87,7 @@ elif press=='Page 5':
     d.metric("Unattended","60862")
     
     st.header('Notification vs Attendance')
-    image = Image.open('C:/Users/user10/Desktop/graph5.png')
+    image = Image.open('graph5.png')
     st.image(image, caption=None, width=500, use_column_width=None, clamp=False, channels="white", output_format="auto")
     st.subheader('Received')
     e,f=st.columns(2)
