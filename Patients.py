@@ -29,7 +29,7 @@ elif press=='Page 2':
         bar.progress(i + 1)
         time.sleep(0.05)
         
-    record=pd.read_csv("C:/Users/user10/Desktop/Patient Appointment.csv")
+    record=pd.read_csv("Patient Appointment.csv")
     remove=["PatientId","ScheduledDay","AppointmentDay"]
     record.drop(remove, inplace=True, axis=1)
     record.rename(columns={'Hipertension':'Hypertension', 'Handcap':'Handicapped','SMS_received':'Notification(SMS)','No-show':'Attended'},inplace=True)
