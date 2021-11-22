@@ -75,7 +75,7 @@ elif press=='Page 4':
     
 elif press=='Page 5':
     st.header('Scholarship vs Attendance')
-    image = Image.open('C:/Users/user10/Desktop/graph2.png')
+    image = Image.open('graph2.png')
     st.image(image, caption=None, width=500, use_column_width=None, clamp=False, channels="white", output_format="auto")
     st.subheader('Scholarship')
     a,b=st.columns(2)
